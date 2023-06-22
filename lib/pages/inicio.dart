@@ -7,20 +7,24 @@ class Inicio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: myAppbar(context),
-        body: ListView(
+      backgroundColor: Colors.black,
+      appBar: myAppbar(context),
+      body: SingleChildScrollView(
+        child: Column(
           children: [
             const SizedBox(
-              height: 15,
+              height: 40,
             ),
-            Text("Lista",
-                textAlign: TextAlign.center, style: TextStyle(fontSize: 30)),
+            Text("BIENVENIDO / A",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 30, color: Colors.white)),
             const SizedBox(
               height: 25,
             ),
             lista(),
           ],
         ),
-        );
+      ),
+    );
   }
 }
